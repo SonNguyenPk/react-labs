@@ -7,7 +7,7 @@ const sizeMap = {
   large: '90px',
 };
 
-function Box({ box, onClick }) {
+function Box({ box, onClick, children }) {
   const { color = 'black', luckyNumber, size = 'medium' } = box;
   const height = sizeMap[size];
 
@@ -17,7 +17,8 @@ function Box({ box, onClick }) {
 
   return (
     <div className="box" style={{ backgroundColor: color, height }}>
-      {luckyNumber}
+      {/* {luckyNumber} */}
+      {children}
 
       <button onClick={handleRemoveClick}>Remove</button>
     </div>
