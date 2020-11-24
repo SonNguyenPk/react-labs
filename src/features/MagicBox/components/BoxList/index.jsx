@@ -19,7 +19,17 @@ function BoxList({ boxList, onBoxClick }) {
       <ul className="box-list">
         {boxList.map((box, idx) => (
           <li key={box.luckyNumber}>
-            <Box box={box} onClick={(box) => onBoxClick && onBoxClick(box, idx)} />
+            <Box box={box} onBoxClick={onBoxClick && onBoxClick(box, idx)}>
+              BOX {box.luckyNumber}
+            </Box>
+
+            {/* <button
+              onClick={(box) => {
+                onBoxClick && onBoxClick(box, idx);
+              }}
+            >
+              Remove
+            </button> */}
           </li>
         ))}
       </ul>
