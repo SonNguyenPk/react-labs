@@ -1,0 +1,21 @@
+.header{
+    padding: .5rem 1rem;
+    margin: -.5rem;
+    
+    &__menu{
+        display: flex;
+        flex-flow: row nowrap;
+
+        & >li{
+            padding: 0 .5rem;
+            list-style-type: none;
+        }
+
+        &>li>.active{
+            color:blue;
+            text-decoration: none;
+            transition:all .5s ease-out;
+
+        } 
+    }
+}

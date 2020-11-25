@@ -1,0 +1,17 @@
+.color-box{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+
+    background-color: black;
+    color: white;
+
+    cursor: pointer;
+    transition: all .1 ease-in-out;
+
+
+}
